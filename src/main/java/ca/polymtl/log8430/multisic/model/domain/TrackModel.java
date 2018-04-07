@@ -15,17 +15,17 @@ public class TrackModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @JsonSerialize(using = ToStringSerializer.class)
-    private Long id;
+    protected Long id;
 
-    private String name;
+    protected String name;
 
-    private String album;
+    protected String album;
 
-    private String artist;
+    protected String artist;
 
-    private String imagesurl;
+    protected String imagesurl;
 
-    private String previewurl;
+    protected String previewurl;
     
 	public TrackModel() {
 		this.id = UUID.randomUUID().getMostSignificantBits() & Long.MAX_VALUE;
